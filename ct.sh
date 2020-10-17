@@ -122,8 +122,10 @@ parse_command_line() {
 
 run_ct_container() {
     echo 'Running ct container...'
+    echo "Current workingdir"
     echo $(pwd)
     ls -al $(pwd)
+    ech "finished"
     local args=(run --rm --interactive --detach --network host --name ct "--volume=$(pwd):/workdir" "--workdir=/workdir")
 
     if [[ -n "$config" ]]; then
