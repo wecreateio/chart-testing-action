@@ -129,7 +129,7 @@ run_ct_container() {
     fi
 
     args+=("$image" cat)
-
+    echo "${args[@]}"
     docker "${args[@]}"
     echo
 }
