@@ -130,6 +130,7 @@ run_ct_container() {
 
     args+=("$image" cat)
     echo "${args[@]}"
+    ls -al /_work/helm/helm
     docker "${args[@]}"
     echo
 }
