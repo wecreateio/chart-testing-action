@@ -8,6 +8,8 @@ DEFAULT_IMAGE=quay.io/helmpack/chart-testing:v3.1.1
 ls -al .
 
 docker version 
+git version
+
 show_help() {
 
 echo "SHOW WORKINGDIR"
