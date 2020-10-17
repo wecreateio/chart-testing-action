@@ -9,6 +9,7 @@ ls -al .
 
 docker version 
 git version
+git rev-parse --is-inside-work-tree 
 
 show_help() {
 
