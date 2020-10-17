@@ -5,11 +5,11 @@ set -o nounset
 set -o pipefail
 
 DEFAULT_IMAGE=quay.io/helmpack/chart-testing:v3.1.1
-
+ls -al .
 show_help() {
 
 echo "SHOW WORKINGDIR"
-ls -al .
+
 
 cat << EOF
 Usage: $(basename "$0") <options>
